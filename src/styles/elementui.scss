@@ -1,0 +1,65 @@
+//.el-submenu .is-active {
+//  background-color: #f56c6c !important;
+//}
+
+el-submenu__title {
+  font-size: 13px;
+  font-family: "open sans", "Helvetica Neue", 微软雅黑, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+
+.el-submenu {
+  font-size: 13px;
+  font-family: "open sans", "Helvetica Neue", 微软雅黑, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.el-submenu .el-menu-item {
+  //font-size: 13px;
+  //font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+  padding-left: 50px !important;
+
+  &.is-active {
+    background-color: $navTwoSelectColor !important;
+  }
+}
+
+//.el-submenu__title {
+//  font-size: 13px;
+//  font-family: "open sans", "Helvetica Neue", "微软雅黑", Helvetica, Arial, sans-serif;
+//}
+
+//一级菜单
+
+li.el-submenu {
+  .el-menu-item-group__title {
+    padding: 0px !important;
+  }
+
+  &.is-active.is-opened .el-submenu__title {
+    background-color: $navOneSelectColor !important;
+  }
+}
+
+.close {
+  .el-menu-item {
+    color: #010101;
+  }
+}
+
+.el-table__header-wrapper {
+  .cell {
+    text-align: center;
+    font-size: 15px;
+    color: rgba(101,101,101,0.88);
+  }
+}
+
+.el-table__row {
+  .cell {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(101,101,101,0.88);
+  }
+}

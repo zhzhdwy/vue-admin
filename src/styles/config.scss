@@ -1,0 +1,31 @@
+//后台框架尺寸
+//菜单宽度
+$navMenuWeight: 200px;
+$navMenuWeightClose: 64px;
+$navOneSelectColor: #f56c6c;
+$navTwoSelectColor: rgba(245, 108, 108, 0.2);
+
+
+$layoutHeader: 55px;
+
+//兼容性
+@mixin webkit($type, $value) {
+  -webkit-#{$type}: $value;
+  -moz-#{$type}: $value;
+  -o-#{$type}: $value;
+  -ms-#{$type}: $value;
+  #{$type}: $value;
+}
+
+
+@mixin labelDom($align, $width, $line-height: "normal"){
+  label {
+    float: left;
+    width: $width + px;
+    text-align: $align;
+    line-height: $line-height + px;
+  }
+  .warp-content {
+    margin-left: $width + px;
+  }
+}
